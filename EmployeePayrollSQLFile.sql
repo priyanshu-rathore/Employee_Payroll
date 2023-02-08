@@ -26,5 +26,8 @@ values('Hawkings',1000000,'2020-10-12')
 insert into employee_payroll(EmployeeName,Salary,StartDate)
 values('Ramanujan',90000,'2021-10-12')
 
-/*Showing the table*/
+/*UC4 Showing the table*/
 select * from employee_payroll;
+
+/*UC5 Showing table using where condition*/
+select Salary from employee_payroll where StartDate between '2018-2-2' and '2020-1-1';
