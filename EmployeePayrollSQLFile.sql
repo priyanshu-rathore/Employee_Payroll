@@ -34,3 +34,6 @@ select Salary from employee_payroll where StartDate between '2018-2-2' and '2020
 
 /*UC6 Update Employee payroll*/
 update employee_payroll set EmployeeName='INCUBUS' where EmployeeName='Priyanshu' or EmployeeID=1;
+
+/*UC7 ability to find sum,average,min,max data from table*/
+select sum(Salary) from employee_payroll where EmployeeName = 'Priyanshu' and EmployeeName = 'Hisenberg' group by EmployeeName;
