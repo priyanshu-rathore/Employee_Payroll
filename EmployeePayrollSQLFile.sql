@@ -31,3 +31,6 @@ select * from employee_payroll;
 
 /*UC5 Showing table using where condition*/
 select Salary from employee_payroll where StartDate between '2018-2-2' and '2020-1-1';
+
+/*UC6 Update Employee payroll*/
+update employee_payroll set EmployeeName='INCUBUS' where EmployeeName='Priyanshu' or EmployeeID=1;
