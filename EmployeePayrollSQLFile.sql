@@ -37,3 +37,8 @@ update employee_payroll set EmployeeName='INCUBUS' where EmployeeName='Priyanshu
 
 /*UC7 ability to find sum,average,min,max data from table*/
 select sum(Salary) from employee_payroll where EmployeeName = 'Priyanshu' and EmployeeName = 'Hisenberg' group by EmployeeName;
+
+/*UC8 ability to extend the table*/
+alter table employee_payroll add phone varchar(20);
+alter table employee_payroll add address varchar;
+alter table employee_payroll add department varchar;
