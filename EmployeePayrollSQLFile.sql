@@ -42,3 +42,14 @@ select sum(Salary) from employee_payroll where EmployeeName = 'Priyanshu' and Em
 alter table employee_payroll add phone varchar(20);
 alter table employee_payroll add address varchar;
 alter table employee_payroll add department varchar;
+
+/*UC9 Ability to extend
+employee_payroll table
+to have Basic Pay,
+Deductions, Taxable Pay,
+Income Tax, Net Pay*/
+alter table employee_payroll add BasicPay float;
+alter table employee_payroll add Deductions float;
+alter table employee_payroll add TaxablePay float;
+alter table employee_payroll add IncomeTax float;
+alter table employee_payroll add NetPay float;
